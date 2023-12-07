@@ -1,3 +1,4 @@
+import { SignMessage } from "@/components/SignMessage";
 import { ConnectKitButton } from "connectkit";
 
 export const metadata = {
@@ -7,9 +8,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <div className="flex items-center align-middle w-full justify-center h-screen mx-auto my-auto">
-        <div>
-
+      <div className="flex flex-col items-center align-middle w-full justify-center h-screen mx-auto my-auto">
+        <div className="">
           <h1 className="text-2xl">Sign in with Ethereum</h1>
           <ul className="list">
             <li>Connect your wallet</li>
@@ -19,6 +19,7 @@ export default function Home() {
           </ul>
         </div>
         <ConnectKitButton />
+      <SignMessage />
       </div>
     </main>
   );
